@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Manrope&display=swap');
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Manrope';
+  font-weight: 800;
+  background: hsl(218, 23%, 16%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#main {
+  width: min-content;
+  padding: 30px;
+  background: hsl(217, 19%, 24%);
+  border-radius: 14px;
+  position: relative;
+}
+
+.advice-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.advice {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.advice #adviceNo {
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 5px;
+  font-size: 14px;
+}
+
+.advice #adviceText {
+  font-size: 28px;
+  color: hsl(193, 38%, 86%);
+}
+
+.divider {
+  padding: 10px;
+}
+
+#randAdvice {
+  background: hsl(150, 100%, 66%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+
+  position: absolute;
+  bottom: -25px;
+  transition: box-shadow .2s;
+}
+
+#randAdvice img{
+  display: block;
+  margin: auto;
+}
+
+#randAdvice:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 20px hsl(150, 100%, 66%);
+  transition: box-shadow .2s;
+}
+
+@media only screen and (min-width: 1440px) {
+  .divider {
+    content: url('./images/pattern-divider-desktop.svg');
+  }
+}
