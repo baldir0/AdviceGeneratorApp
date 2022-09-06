@@ -11,9 +11,10 @@ const getAdvice = () => {
 
 const setAdvice = (advice) => {
   const adviceElement = document.querySelector('.advice');
-  const adviceNo = document.querySelector('#adviceNo');
-  adviceNo.innerText = `ADVICE ${advice.slip.id}`;
-  const adviceText = document.querySelector('#adviceText');
+  const adviceNo = document.querySelector('.advice-id');
+  const adviceText = document.querySelector('.advice-text');
+  
+  adviceNo.innerText = `ADVICE #${advice.slip.id}`;
   adviceText.innerText = `"${advice.slip.advice}"`;
 
   adviceElement.appendChild(adviceNo);

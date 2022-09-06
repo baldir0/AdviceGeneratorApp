@@ -22,7 +22,7 @@ html, body {
   position: relative;
 }
 
-.advice-container {
+.card {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -36,13 +36,13 @@ html, body {
   text-align: center;
 }
 
-.advice #adviceNo {
+.advice-id {
   color: hsl(150, 100%, 66%);
   letter-spacing: 5px;
   font-size: 14px;
 }
 
-.advice #adviceText {
+.advice-text {
   font-size: 28px;
   color: hsl(193, 38%, 86%);
 }
@@ -51,7 +51,7 @@ html, body {
   padding: 10px;
 }
 
-#randAdvice {
+.btn {
   background: hsl(150, 100%, 66%);
   width: 50px;
   height: 50px;
@@ -63,12 +63,12 @@ html, body {
   transition: box-shadow .2s;
 }
 
-#randAdvice img{
+.btn img{
   display: block;
   margin: auto;
 }
 
-#randAdvice:hover {
+.btn:hover {
   cursor: pointer;
   box-shadow: 0px 0px 20px hsl(150, 100%, 66%);
   transition: box-shadow .2s;
